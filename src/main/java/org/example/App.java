@@ -33,6 +33,8 @@ public class App {
 
         ArrayList<String> args = new ArrayList<>();
         add(args, "-d", from.getParentFile().getAbsolutePath());
+        // uncomment to "fix"
+        // add(args, "-proc:none");
 
         args.add(from.getAbsolutePath());
         String[] arguments = args.toArray(new String[0]);
